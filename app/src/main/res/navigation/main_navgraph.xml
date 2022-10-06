@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navgraph"
+    app:startDestination="@id/pagina1">
+
+    <fragment
+        android:id="@+id/pagina1"
+        android:name="com.example.practice.fragments.Pagina1"
+        android:label="fragment_pagina1"
+        tools:layout="@layout/fragment_pagina1" >
+        <action
+            android:id="@+id/action_pagina1_to_pagina2"
+            app:destination="@id/pagina2" >
+            <argument
+                android:name="userName" />
+        </action>
+    </fragment>
+    <fragment
+        android:id="@+id/pagina2"
+        android:name="com.example.practice.fragments.Pagina2"
+        android:label="fragment_pagina2"
+        tools:layout="@layout/fragment_pagina2" >
+        <argument
+            android:name="userName"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/pagina3"
+        android:name="com.example.practice.fragments.Pagina3"
+        android:label="fragment_pagina3"
+        tools:layout="@layout/fragment_pagina3" />
+    <fragment
+        android:id="@+id/pagina4"
+        android:name="com.example.practice.fragments.Pagina4"
+        android:label="fragment_pagina4"
+        tools:layout="@layout/fragment_pagina4" />
+</navigation>

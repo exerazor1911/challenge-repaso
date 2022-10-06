@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">practice</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="app_title">Buy App</string>
+    <string name="continue_button">Continuar</string>
+    <string name="input_user">Usuario</string>
+    <string name="input_password">Contrasenia</string>
+    <string name="app_user_welcome">Hola, </string>
+</resources>
